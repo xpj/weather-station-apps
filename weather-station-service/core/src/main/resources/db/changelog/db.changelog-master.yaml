@@ -1,0 +1,43 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: 1
+      author: xpj
+      changes:
+        - createTable:
+            tableName: quantity_log
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: temperature1
+                  type: numeric
+              - column:
+                  name: temperature2
+                  type: numeric
+              - column:
+                  name: humidity1
+                  type: numeric
+              - column:
+                  name: pressure1
+                  type: numeric
+              - column:
+                  name: pressure2
+                  type: numeric
+              - column:
+                  name: light
+                  type: numeric
+              - column:
+                  name: rainTicks
+                  type: numeric
+              - column:
+                  name: rainHeight
+                  type: numeric
+              - column:
+                  name: timestamp
+                  type: numeric
