@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Import;
 @EnableConfigurationProperties
 @ConfigurationProperties
 @Import({
-		DataConfig.class,
+		DataConfig.class
 })
 public class CoreApplication {
 

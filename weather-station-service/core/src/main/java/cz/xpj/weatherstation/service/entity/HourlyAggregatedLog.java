@@ -9,4 +9,6 @@ import javax.persistence.Table;
 @Table(name = "hourly_aggregated_log")
 @Data
 public class HourlyAggregatedLog extends AggregatedLog {
+    public HourlyAggregatedLog() {
+    }
 }
